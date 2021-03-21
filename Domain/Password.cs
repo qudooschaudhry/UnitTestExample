@@ -8,7 +8,7 @@
             return new Password()
             {
                 // do not do this, this is just an example
-                HashValue = $"{plainText}_hashedvalue"
+                HashValue = HashProvider.Hash(plainText)
             };
         }
 
